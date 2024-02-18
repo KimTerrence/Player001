@@ -4,33 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!----------nav bar---------->
     <nav>
         <h1><a href="landing.html">KCREATES</a></h1>
         <ul>
-            <li>
-                    <a href="">Home</a>
-            </li>
-            <li>
-                    <a href="">About</a>
-            </li>
-            <li>
-                    <a href="">Projects</a>
-            </li>
-            <li>
-                    <a href="">Contact</a>
-            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
-    <section>
+<!---------Home------------->
+    <section id="home">
         <div class="container">
             <div class="frof-card">
                 <div class="white-bg">
-                     <img src="hhaha.jpg" alt="">
+                     <img src="pic1.jpg" alt="">
                 </div>
                 <p>キム・テレンス</p>
            </div>
@@ -46,7 +39,7 @@
                 <div class="icon-con">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/profile.php?id=100009127987242"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30">
                                 <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"></path>
                             </svg></a>
                         </li>
@@ -69,6 +62,53 @@
         </div>
     </section>
 
+    <!----------About------------->
+
+    <section id="about">
+        
+        <div>
+            <h1>----------About Me----------</h1>
+        </div>
+        <div class="about-container">
+            
+            <div class="about-img">
+                
+                <img src="pic2.jpg" alt="">
+            </div>
+            <div class="educ-skill">
+                <div class="education">
+                    <h1>Hello</h1>
+                    <p>Im Kim Terrece Quines, 19 years old from Santa Teresita, Cagayan, Phillipines <br>
+                        I am 2nd year student and currently pursuing BS Information Technology</p>
+                    <h2>Education</h2>
+                    
+                   <ul>
+                    <li>Collage: Cagayan State Universty - BSIT - (2022-Today)</li>
+                    <li>Senior High School: Saint Fransis Academy - HUMSS - (2020-2022)</li>
+                    <li>High School: Saint Francis Academy - (2015-2020)</li>
+                </ul>
+                </div>
+                <h2>Skills</h2>
+                <div class="skill">
+                    <div>
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>HTML CSS </li><progress></progress>
+                            <li>Java Script </li><progress></progress>
+                            <li>Java </li><progress></progress>
+                            <li>Visual Basic </li><progress></progress>
+                            <li>C# </li><progress></progress>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Frameworks</h4>
+                        <ul>React.js <progress></progress></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------footer--------------->
     <footer>
         <p>footer</p>
     </footer>
@@ -76,7 +116,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed("#title",{
-            strings: ["IT Student","Web Developer", "Freelancer ", "Diko na alam! huhuhu","Future tambay"],
+            strings: ["IT Student","Front End Web Developer","Future tambay"],
             typeSpeed:150,
             backSpeed:150,
             loop:true
