@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <!----------nav bar---------->
-    <nav>
+    <nav id="nav">
         <h1><a href="landing.html">KCREATES</a></h1>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#nav">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -39,7 +39,7 @@
                 <div class="icon-con">
                     <ul>
                         <li>
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30">
+                            <a href="https://web.facebook.com/profile.php?id=100009127987242&_rdc=1&_rdr"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30">
                                 <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"></path>
                             </svg></a>
                         </li>
@@ -67,7 +67,7 @@
     <section id="about">
         
         <div>
-            <h1>----------About Me----------</h1>
+            <h1>About Me</h1>
         </div>
         <div class="about-container">
             
@@ -92,26 +92,100 @@
                 <div class="skill">
                     <div>
                         <h4>Languages</h4>
-                        <ul>
-                            <li>HTML CSS </li><progress></progress>
-                            <li>Java Script </li><progress></progress>
-                            <li>Java </li><progress></progress>
-                            <li>Visual Basic </li><progress></progress>
-                            <li>C# </li><progress></progress>
-                        </ul>
+                        <div>
+                            <label for="html">HTML: </label>
+                            <br>
+                            <progress id="html" value="70" max="100"></progress>
+                            <br>
+                            <label for="css">CSS:</label>
+                            <br>
+                            <progress id="css" value="70" max="100"></progress>
+                            <br>
+                            <label for="java">Java:</label>
+                            <br>
+                            <progress id="java" value="40" max="100"></progress>
+                            <br>
+                            <label for="c">C#:</label>
+                            <br>
+                            <progress id="c" value="40" max="100"></progress>
+                        </div>
                     </div>
                     <div>
                         <h4>Frameworks</h4>
-                        <ul>React.js <progress></progress></ul>
+                        <label for="Bootsrap">Bootsrap:</label>
+                        <br>
+                        <progress id="Bootsrap" value="30" max="100"></progress>
+                        <br>
+                        <label for="tailwind">Tailwind:</label>
+                        <br>
+                        <progress id="tailwind" value="30" max="100"></progress>
+                        <br>
+                        <label for="react">React:</label>
+                        <br>
+                        <progress id="react" value="10" max="100"></progress>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-------------Project-------------->
+    <section id="projects">
+
+    </section>
+    <!-------------Contact-------------->
+    <section id="contact">
+        <div class="contact-links">
+            <div class="contact-card">
+                <div class="hello">
+                    <p>Say Hello</p>
+                </div>
+                
+                <div class="socmed_link">
+                    <ul>
+                        <li>
+                            <a href="https://web.facebook.com/profile.php?id=100009127987242&_rdc=1&_rdr"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"></path>
+                            </svg></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kim_iz_coding?igsh=ZXNjcnRwNDFqcGo="><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                                <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+                            </svg></a>
+                        </li>
+                        <li>
+                            <a href=""><img onclick="alert('Copied')" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABs0lEQVR4nO2ZS04CQRCGv3EFnEK8jo8DKIm4kLWICdtZcgVYqAnegi0ncC83QJYsMZ3UJJ3OMDL9YNDUn9QK6vF3/dMFNaD4+7gABsC4phmfbtPFPwBbYOdpW6Df5MmHFG+TaKQTA6uIT2BS04xP4f94jII7wA3wLBpeWAXkHvGMT+G/kJhDyWFyRUMGjIBNhQxCCewc2wiZLEbxHwfoODaBndg8lMTICfgFTEXDy4gElhLTxF45OZ98i+84snkFWhUPcd05sO8hNjnerM++gbYPgWvn5O3iU1+jLacTl6HyMa0tQz/CILvfE3tmfc/cfEEardJ4VyRQdw4Yn/MI+dMFCESuBNAOnLaEzoCex/1fmPHNmiTQizAD7pRAQAcyOcGJp902LaHUyJUA2oEg5DoH0DnASQ+yTOdANXQO5DoH/tEc6Hls2PJT+z9QdWWWQQnkEefAb7/9y6DX6MsBq8WUmIWuFu3l7qpkuZsS7RjL3Y6stosg70ci0ZZcRd6173odaZ19Fa5ETuNENo35gqPOK6ZUNo/1nmzoyCm1reXkg4t3n4krITNJZEPJ4a15BUfGD2AgS+XE9x2XAAAAAElFTkSuQmCC"></a>
+                        </li>
+                    </ul>
+                    <div class="loc-num">
+                        <p> <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/marker--v1.png" alt="marker--v1"/> Santa Teresita Cagayan</p>
+                        <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIklEQVR4nO3VQStEURTA8R9CGQsLNr6G2FooPoUFC8tZsqbY+AJiazdrqbGlECtlI6xYEEnNwkKjqTs1Te8987y5U2r+dTa31/nfd+8959CnT+dMYwMXeMcnTrCUI0cuxrGFGuopsdNt6RweM4StsdotaRlfHUrruC8qHMJBDmEzLotIR1HJKfwOG536q7SEakLiF1ylSM8wU+RPR3CckPgUk+GbedyE9WesYbDonVYSpIdhQ60Mh5c+pgvsJ0h3MSAi5QTpnsjMJtTpUTj6aJTw0CZ9xYTIbCYc8XUvpkwtpS4XYorXM7rQbSiZKJz/0gIbdRqFtwzpU3h4UfjIEC+LSDWj4UftVospo63QlOmU7TZxo1/3jBXchVnbHH19/h8/2Y6ojzrDQ3kAAAAASUVORK5CYII="> +63987654321</p>
+                    </div>
+                </div>     
+            </div>
+        </div>
+        <div class="contact-form">
+            <P>Interested? Lets Work Together!</P>
+            <br>
+            <form action="">
+                <label for="email">Name: </label>
+                <br>
+                <input id="name" type="name" required>
+                <br>
+                <label for="email">Email Address:</label>
+                <br>
+                <input id="email" type="email" required>
+                <br>
+                <textarea placeholder=" Enter Message Here!" name="" id="message" cols="50" rows="10"></textarea>
+                <br>
+                <input type="submit">
+                
+            </form>
+        </div>
+    </section>
     <!-------------footer--------------->
     <footer>
         <p>footer</p>
-    </footer>
+    </footer>  
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
